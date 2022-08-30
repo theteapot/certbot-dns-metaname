@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "certbot_dns_metaname"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Taylor Kettle <tin.teapot@gmail.com>"]
 
