@@ -7,12 +7,14 @@ import logging
 from certbot import errors
 from certbot import interfaces
 from certbot.plugins import dns_common
+import zope
 
 import os
 
 logger = logging.getLogger(__name__)
 
-
+@zope.interface.implementer(interfaces.IAuthenticator)
+@zope.interface.provider(interfaces.IPluginFactory)
 class Authenticator(dns_common.DNSAuthenticator):
     def __init__(self, *args, **kwargs):
         super(Authenticator, self).__init__(*args, **kwargs)
