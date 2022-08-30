@@ -67,7 +67,3 @@ class Authenticator(dns_common.DNSAuthenticator):
             self.metaname_account_reference,
             self.metaname_api_key,
         )
-
-
-if __name__ == "__main__":
-    print(os.getenv("CERTBOT_DOMAIN"))
