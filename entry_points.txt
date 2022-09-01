@@ -1,2 +1,0 @@
-[certbot.plugins]
-dns-metaname = certbot_dns_metaname.dns_metaname:Authenticator
