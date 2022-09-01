@@ -2,3 +2,6 @@ __pycache__
 dist
 *.egg-info
 build.sh
+metaname_creds
+certbot_dns_metaname.service
+start.sh
